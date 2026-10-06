@@ -1,0 +1,445 @@
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+body{
+    background-color: blue;
+}
+
+
+/* HEADER */
+header {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* LOGO */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.logo span {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0b8f8f;
+}
+
+
+/* APPLY BUTTON */
+.apply-btn {
+    background: #0b8f8f;
+    color: white !important;
+    padding: 10px 18px;
+    border-radius: 4px;
+}
+
+
+/* HERO SECTION */
+.hero {
+    min-height: 600px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+}
+
+
+/* HERO TEXT */
+.hero-content {
+    max-width: 750px;
+    padding: 30px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+
+
+/* HERO BUTTONS */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    background: #0b8f8f;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.second-btn {
+    background: white;
+    color: #222;
+}
+
+
+/* GENERAL SECTIONS */
+section {
+    padding: 70px 7%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+
+/* ABOUT */
+.about {
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.about p {
+    max-width: 850px;
+    margin: 10px auto;
+    font-size: 17px;
+}
+
+
+/* COURSES */
+.courses {
+    text-align: center;
+}
+
+.section-text {
+    margin-bottom: 35px;
+}
+
+
+/* COURSE CARDS */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.course-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.course-card h3 {
+    margin-bottom: 12px;
+    color: #0b8f8f;
+}
+
+
+/* APPLICATION */
+.apply {
+    text-align: center;
+    background: #0b8f8f;
+    color: white;
+}
+
+.apply h2 {
+    margin-bottom: 15px;
+}
+
+.apply button {
+    margin-top: 20px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 4px;
+    background: white;
+    color: #222;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* CONTACT */
+.contact {
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+
+/* CHATBOT BUTTON */
+#chatbot-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    width: 60px;
+    height: 60px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #0b8f8f;
+    color: white;
+
+    font-size: 28px;
+    cursor: pointer;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 900px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .course-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 12px;
+    }
+}
+/* ============================= */
+/* CHATBOT */
+/* ============================= */
+
+.chatbot-container {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+}
+
+/* Chatbot Button */
+.chatbot-button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: #0066cc;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2, transform 0.2s;
+}
+
+.chatbot-button:hover {
+    background: #004f9e;
+    transform: scale(1.08);
+}
+
+/* Chatbot Window */
+.chatbot-window {
+    display: none;
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+    width: 350px;
+    height: 480px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Chatbot Header */
+.chatbot-header {
+    height: 65px;
+    background: #0066cc;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.chatbot-header strong {
+    display: block;
+    font-size: 18px;
+}
+
+.chatbot-header small {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+#close-chatbot {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Messages Area */
+.chatbot-messages {
+    height: 350px;
+    padding: 15px;
+    overflow-y: auto;
+    background: #f5f5f5;
+}
+
+/* Bot Message */
+.bot-message {
+    background: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* User Message */
+.user-message {
+    background: #0066cc;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    max-width: 80%;
+}
+
+/* Input Area */
+.chatbot-input {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+#user-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+}
+
+#send-button {
+    margin-left: 8px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    background: #0066cc;
+    color: white;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background: #004f9e;
+}

@@ -1,0 +1,199 @@
+ {
+  "school": {
+    "name": "Arizona International College",
+    "tagline": "Your Future Starts Here"
+  },
+
+  "contact": {
+    "phone": [
+      "+254 757 222 111",
+      "+254 746 666 056",
+      "+254 715 167 703"
+    ],
+    "email": [
+      "admissions@arizonainternationalcollege.africa",
+      "info@arizonainternationalcollege.africa"
+    ]
+  },
+
+  "campuses": [
+    {
+      "name": "Thika Campus",
+      "location": "Thika Arcade Building, 6th Floor"
+    },
+    {
+      "name": "Nairobi East Campus",
+      "location": "SkygoMall Building, Behind 3D'S, Mlolongo"
+    }
+  ],
+
+  "opening_hours": {
+    "monday_to_saturday": "8:00 AM - 8:00 PM",
+    "sunday": "Closed"
+  },
+
+  "schools": [
+    "School of Business",
+    "School of Social Sciences",
+    "School of Hospitality and Tourism",
+    "School of Fashion Design",
+    "School of Media and Journalism",
+    "School of Engineering",
+    "School of Hairdressing and Beauty Therapy",
+    "School of ICT"
+  ],
+
+  "courses": [
+  {
+    "name": "Business Management & Administration",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  },
+  {
+    "name": "Business Administration",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  },
+  {
+    "name": "Sales & Marketing",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  },
+  {
+    "name": "Accounting & Finance",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  },
+  {
+    "name": "Human Resource Management",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  },
+  {
+    "name": "Purchasing & Supply Management",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  },
+  {
+    "name": "Front Office Management",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  },
+  {
+    "name": "Banking & Finance",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  },
+  {
+    "name": "Project Management",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  },
+  {
+    "name": "Supply Chain Management",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  },
+  {
+    "name": "Supply Chain & Logistics",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  },
+  {
+    "name": "Secretarial Studies",
+    "school": "School of Business",
+    "exam_body": "KNEC",
+    "level": "Diploma",
+    "duration": "8 Terms",
+    "tuition_fee_per_term": "KSh 15,000",
+    "entry_requirement": "C- (Minus)"
+  }
+],
+
+  "fees": [],
+
+  "admissions": [
+    "Copy of National ID, Passport or Birth Certificate",
+    "Copies of previous academic certificates",
+    "2 passport-size photographs",
+    "Registration fee: KSh 1,000",
+    "Student ID card fee: KSh 500"
+],
+
+  "knec_timetable": [],
+
+  "faqs": [
+    {
+        "question": "What courses does Arizona International College offer?",
+        "answer": "Arizona International College offers courses in areas such as Business, Accounting and Finance, Human Resource Management, Supply Chain Management, Secretarial Studies, ICT, and other fields."
+    },
+    {
+        "question": "What are the admission requirements?",
+        "answer": "Applicants should provide a copy of their National ID, Passport or Birth Certificate, copies of previous academic certificates, and two passport-size photographs."
+    },
+    {
+        "question": "How much is the registration fee?",
+        "answer": "The registration fee listed in the college brochure is KSh 1,000."
+    },
+    {
+        "question": "How much is the student ID card?",
+        "answer": "The student ID card fee listed in the college brochure is KSh 500."
+    },
+    {
+        "question": "Does Arizona International College offer accommodation?",
+        "answer": "Please contact the college for the current information about accommodation availability and charges."
+    },
+    {
+        "question": "Where is Arizona International College located?",
+        "answer": "Arizona International College is located in Kenya. Please contact the college for the current campus location and directions."
+    },
+    {
+        "question": "How can I contact Arizona International College?",
+        "answer": "You can use the contact information provided on the official Arizona International College website."
+    }
+  ]
+}

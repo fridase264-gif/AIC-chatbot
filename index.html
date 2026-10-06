@@ -1,0 +1,304 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Arizona International College</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            ARIZONA<br>
+            <span>INTERNATIONAL COLLEGE</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+            <a href="#apply" class="apply-btn">Apply Now</a>
+        </nav>
+    </header>
+
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Your Future Starts Here</h1>
+
+            <p>
+                Join Arizona International College and achieve
+                your career goals.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#apply" class="btn">Apply Today</a>
+                <a href="#courses" class="btn second-btn">
+                    View Our Courses
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+
+        <h2>About Arizona International College</h2>
+
+        <p>
+            Arizona International College is a tertiary institution
+            providing technical and professional training in various
+            fields.
+        </p>
+
+        <p>
+            Our goal is to provide quality education and empower
+            learners with skills relevant to the job market.
+        </p>
+
+    </section>
+
+
+    <!-- COURSES SECTION -->
+    <section id="courses" class="courses">
+
+        <h2>Our Courses</h2>
+
+        <p class="section-text">
+            Explore the schools and courses offered at Arizona
+            International College.
+        </p>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <h3>School of Business</h3>
+                <p>KNEC and KASNEB courses.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>School of Social Sciences</h3>
+                <p>Social sciences and related programmes.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>School of Hospitality & Tourism</h3>
+                <p>Hospitality and tourism programmes.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>School of Fashion Design</h3>
+                <p>Fashion design and related courses.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>School of Media & Journalism</h3>
+                <p>Media and journalism programmes.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>School of Engineering</h3>
+                <p>Engineering and technical programmes.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>School of Hairdressing & Beauty Therapy</h3>
+                <p>Beauty and hairdressing courses.</p>
+            </div>
+
+            <div class="course-card">
+                <h3>School of ICT</h3>
+                <p>Information and communication technology courses.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- APPLICATION SECTION -->
+    <section id="apply" class="apply">
+
+        <h2>Your Future Starts Here</h2>
+
+        <p>
+            Join us and achieve your career goals.
+        </p>
+
+        <button>Apply Now</button>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p><strong>Thika Campus</strong></p>
+        <p>Thika Arcade Building, 6th Floor</p>
+
+        <p><strong>Nairobi East Campus</strong></p>
+        <p>
+            SkygoMall Building, Behind 3D'S Mlolongo
+        </p>
+
+        <p>
+            Phone: +254 742 888 222
+        </p>
+
+        <p>
+            Phone: +254 746 666 056
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <h3>Arizona International College</h3>
+
+        <p>
+            Your Future Starts Here
+        </p>
+
+        <p>
+            Mon – Sat: 8 am – 8 pm | Sunday: CLOSED
+        </p>
+
+        <p>
+            © 2026 Arizona International College
+        </p>
+
+    </footer>
+   <!-- CHATBOT -->
+
+
+    <!-- Chatbot Button -->
+    <button id="chatbot-button" class="chatbot-button">
+       💬 </button>
+
+    <!-- Chatbot Window -->
+    <div id="chatbot-window" class="chatbot-window">
+
+        <!-- Chatbot Header -->
+        <div class="chatbot-header">
+            <div>
+                <strong>Arizona Assistant</strong>
+                <small>How can we help you?</small>
+            </div>
+
+            <button id="close-chatbot">×</button>
+        </div>
+
+        <!-- Messages -->
+        <div id="chatbot-messages" class="chatbot-messages">
+            <div class="bot-message">
+                Hello! 👋 Welcome to Arizona International College.
+                How can I help you today?
+            </div>
+        </div>
+
+        <!-- Input Area -->
+        <div class="chatbot-input">
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Ask me something..."
+            >
+
+            <button id="send-button">
+                Send
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<script
+</script>
+
+
+</script>
+  if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+    window.chatbase = (...args) => {
+      if (!window.chatbase.q) {
+        window.chatbase.q = [];
+      }
+      window.chatbase.q.push(args);
+    };
+    window.chatbase = new Proxy(window.chatbase, {
+      get(target, prop) {
+        if (prop === "q") {
+          return target.q;
+        }
+        return (...args) => target(prop, ...args);
+      }
+    });
+  }
+
+  const onLoad = function() {
+    const script = document.createElement("script");
+    script.src = "https://www.chatbase.co/embed.min.js";
+    script.id = "pvSv4ythaSZg1QFiJSSjz";
+    script.domain = "www.chatbase.co";
+    document.body.appendChild(script);
+  };
+
+  if (document.readyState === "complete") {
+    onLoad();
+  } else {
+    window.addEventListener("load", onLoad);
+  }
+})();
+</script>
+<script>
+(function(){
+  if(!window.chatbase || window.chatbase("getState") !== "initialized"){
+    window.chatbase = (...args) => {
+      if(!window.chatbase.q){
+        window.chatbase.q = [];
+      }
+      window.chatbase.q.push(args);
+    };
+    window.chatbase = new Proxy(window.chatbase, {
+      get(target, prop){
+        if(prop === "q"){
+          return target.q;
+        }
+        return (...args) => target(prop, ...args);
+      }
+    });
+  }
+
+  const onLoad = function(){
+    const script = document.createElement("script");
+    script.src = "https://www.chatbase.co/embed.min.js";
+    script.id = "pvSv4ythaSZglQFIjSSjX";   // ← New correct ID
+    script.domain = "www.chatbase.co";
+    document.body.appendChild(script);
+  };
+
+  if(document.readyState === "complete"){
+    onLoad();
+  } else {
+    window.addEventListener("load", onLoad);
+  }
+})();
+</script>
+</body>
+</html>
